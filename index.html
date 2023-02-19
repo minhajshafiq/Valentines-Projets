@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="style.css" />
+    <title>Valentine's Day</title>
+
+    <!-- Stylesheets -->
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+    <style>
+        body {
+          background-image: url("images/unknown.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      </style>
+ 
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1548ZsnBSUJVoMehBd2_wRxUdDYfhIkNDtA&usqp=CAU">
+  </head>
+  <body>
+    <h1> Hey bébou ❤ Before asking you to be my Valentine i want you to a question for me. Okay ?</h1>
+
+    <div class="datebox">
+        <label class="dateinput" for="date-input">Take a guess hehe (format jj/mm/aaaa) :</label>
+        <input type="text" id="date-input">
+
+        <button onclick="verifierDate()">Click here on me babe</button>
+        <div id="message"></div>
+    </div>
+
+
+
+    
+    <script>
+      function verifierDate() {
+        var dateEntree = document.getElementById("date-input").value;
+        var dateContenu = "17/03/2022";
+        
+        if (dateEntree === dateContenu) {
+          window.location.href = "contenu.html";
+        } else {
+          document.getElementById("message").innerHTML = "Bon, u got it wrong try again :)"; 
+        }
+      }
+    </script>
+  </body>
+</html>

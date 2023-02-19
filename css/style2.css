@@ -1,0 +1,36 @@
+body {
+    text-align: center;
+  }
+
+  .fr {
+    text-decoration: underline;
+  }
+
+  .Bouton {
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 8rem 1.5rem 8rem;
+  }
+
+  .Yes {
+    width: 100px;
+    height: 50px;
+  }
+
+  .heart {
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    left: 250px;
+    bottom: -560px;
+  }
+
+  .gifts {
+    margin-top: 6rem;
+  }
+
+  button {
+    width: auto;
+    height: 4rem;
+  }

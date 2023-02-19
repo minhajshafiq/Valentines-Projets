@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="css/style2.css"/>
+    <title>Valentine's Day</title>
+
+    <!-- Stylesheets -->
+    <link type="text/css" rel="stylesheet" href="css/style.css">
+ 
+    <!-- Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1548ZsnBSUJVoMehBd2_wRxUdDYfhIkNDtA&usqp=CAU">
+  </head>
+  <body>
+    <h1> Bravo ! </h1>
+    <img src="https://media.tenor.com/4VY0Ykn4lN4AAAAd/cat-broken-cat.gif" alt="Cat drinking water that lia likes">
+    <p>I'm glad you remember that date i mean u better would've otherwise we breakup</p>
+
+    <h2> So Miss Lia Sha..Duarte do you wanna be my Valentine UwU ? </h2>
+    <h2 class="fr"> Alors Madame Lia Sha..Duarte veux-tu être ma Valentine UwU ? </h2>
+    <img src="https://media.tenor.com/NUNkR9EdV14AAAAj/goma-cat.gif" alt="Min offering a rose to Lia">
+    
+     <div class="Bouton">
+        <button class="Yes" onclick="accepter()">Yes i want</button>
+        <button class="Yes" onclick="refuser()">No i don't</button>
+      </div>
+
+      <div id="refuser"></div>
+      
+      <style>
+        .flou {
+          color: transparent;
+          text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        }
+  
+        .deflou {
+          color: black;
+          text-shadow: none;
+        }
+      </style>
+
+      <h3> i love you ❤️ </h3>
+      <div id="texte" class="flou">
+        <p>Wesh bébouuuuuuu.</p>
+        <p> Ik hou van jou </br> Je t'aime </br> I love you </br></p>
+        <p> You're mine now :) I love you a lot and thanks for being my Valentine and i need to remind now that u have no escape en gros bc : 
+        </br> You are the girl of my dreams
+        </br> You are the girl i want
+        </br> You are the girl i need (yes i finally said it kys now) 
+        </br> You are extremly cute
+        </br> You are very beautiful (When can i kiss that face and those lips???)
+        </br> You are very sexy grrrrrrrrr
+        </br class="wife"> You are the wife that i need in my life
+        </br> I really do love you a lot, i don't see myself without neither do i want to be without you in my life because you are very important to me. 
+        </br> I wanna be with you forever until we die with our 3 cats and Mia 👉👈
+        </p>
+        <button onclick="deflouter()">Click here only if you said yes otherwise go fuck yourself</button>
+      </div>
+
+      <div class="gifts">
+        <h3> I bought you 2 gifts and i know its not that much but i hope you are still happy with it fgreqigher </h3>
+        <img src="https://boutique-hellokitty.fr/wp-content/uploads/2022/08/%E4%B8%BB%E5%9B%BEMain-05-5.jpg" alt="Gift1">
+        <p> I wanna put the collar on you myself when we meet</p>
+        <img src="https://boutique-hellokitty.fr/wp-content/uploads/2022/08/%E4%B8%BB%E5%9B%BEMain-05-1.jpg" alt="Gift2">
+      </div>
+
+      <script>
+        function accepter() {
+            const heart = document.createElement("span");
+            heart.classList.add("heart");
+            heart.innerHTML = "moh bébou ❤️ enter your cage right now";
+            document.body.appendChild(heart);
+
+            setTimeout(() => {
+            heart.remove();
+            document.getElementById("texte").classList.remove("flou");
+            }, 11111000);
+        }
+  
+        function refuser() {
+            document.getElementById("refuser").innerHTML = "k. coming to your house tonight to torture and murder you"; 
+        }
+
+        function deflouter() {
+        var texte = document.getElementById("texte");
+        texte.classList.remove("flou");
+        texte.classList.add("deflou");
+      }
+      </script>      
+  </body>
+</html>
